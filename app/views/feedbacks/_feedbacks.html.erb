@@ -1,0 +1,14 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th>Added By</th>
+        <th>Feedback Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%feedbacks.each do |feedback|%>
+        <%= render 'feedback', feedback: feedback%>
+      <%end%>  
+    </tbody>
+  </table>

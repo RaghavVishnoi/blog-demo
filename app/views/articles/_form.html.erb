@@ -1,0 +1,10 @@
+<%= form_for article do |f|%>
+	<div class='form-group'>
+		<label>Content</label><br>
+		<%= f.text_area :content, class: 'form-control' %>
+	</div>
+
+	<div class='form-group'>
+		<%= f.submit :submit, class: 'btn btn-primary' %>
+	</div>
+<% end %>

@@ -1,0 +1,17 @@
+<%= form_for feedback do |f|%>
+	<div class='form-group'>
+		<label>Content</label><br>
+		<%= f.text_area :content, class: 'form-control' %>
+	</div>
+
+	<div class='form-group'>
+		<label>Feedback Type</label><br>
+		<%= f.select :feedback_type, options_for_select(['Comment', 'Feedback']), class: 'form-control' %>
+	</div>
+
+	<%=f.hidden_field :article_id, value: "#{params[:id]}"%>
+
+	<div class='form-group'>
+		<%= f.submit :submit, class: 'btn btn-primary' %>
+	</div>
+<% end %>

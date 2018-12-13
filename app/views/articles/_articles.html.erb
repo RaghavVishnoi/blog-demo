@@ -1,0 +1,14 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th>Author</th>
+        <th>Feedback</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%articles.each do |article|%>
+        <%= render 'article', article: article%>
+      <%end%>  
+    </tbody>
+  </table>

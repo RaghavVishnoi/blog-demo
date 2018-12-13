@@ -1,0 +1,8 @@
+<tr>
+	<td><%=article.content%></td>
+	<td><%=article&.user&.name%></td>
+	<td>
+		<%=link_to("Show", "article/#{article.id}/show_feedbacks")%> |
+		<%=link_to("Add", "article/#{article.id}/add_feedbacks")%>
+	</td>
+</tr>
